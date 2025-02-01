@@ -36,6 +36,14 @@
 .list-container {
   width: 70%;
   display: flex;
+  flex: 1;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  flex-direction: column;
+}
+
+.song-list {
+  margin-left: 20px;
 }
 
 .input-component {
@@ -64,4 +72,127 @@
 
 .add-song-button:active {
   transform: scale(0.95);
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.generate-songs-container {
+  background-color: rgb(244, 244, 244);
+  width: 70%;
+  display: flex;
+  align-items: center;
+  height: auto;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.description {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.section-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.button-container {
+  min-width: 25%;
+}
+
+.generate-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.15s ease;
+  background-color: #e7bc56;
+  font-weight: 700;
+  color: white;
+}
+
+.generate-button:active {
+  transform: scale(0.95);
+}
+
+.response-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin-top: 20px;
+  padding: 25px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  word-spacing: 0.2em;
+}
+
+/* Container for the response */
+.response-container {
+  font-family: "Arial", sans-serif;
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.response-container h1,
+.response-container h2,
+.response-container h3 {
+  color: #6b7280;
+  margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+.response-container p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* List styling */
+.response-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.response-container li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Bold text (song titles) */
+.response-container strong {
+  color: #1a73e8;
+  font-size: 1.1em;
+}
+
+/* Italic text (descriptions) */
+.response-container em {
+  color: #666;
+  font-style: italic;
+}
+
+/* Horizontal rule */
+.response-container hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
 }
